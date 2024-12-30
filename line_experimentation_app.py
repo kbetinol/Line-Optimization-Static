@@ -5,8 +5,8 @@ from itertools import combinations
 from collections import defaultdict
 import numpy as np
 # Load data
-line_data = pd.read_csv('/Users/kasbetinol/Downloads/CleanedLineData.csv')
-individual_data = pd.read_csv('/Users/kasbetinol/Downloads/CleanedForwardsData.csv')
+line_data = pd.read_csv('CleanedLineData.csv')
+individual_data = pd.read_csv('CleanedForwardsData.csv')
 
 # Prepare data (reuse the calculate_line_score and pair metrics logic)
 pair_metrics = defaultdict(lambda: [0, 0, 0, 0, 0, 0])  # [Possession %, Puck Time in OZ %, Shots for %, xG %, Game Score, count]
