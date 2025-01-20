@@ -53,7 +53,7 @@ def calculate_line_score(selected_players, pair_metrics, individual_metrics):
     return line_score
 
 # Streamlit UI
-st.title("Hockey Line Experimentation Platform")
+st.title("UBC Whky Line Experimentation Platform")
 
 players = individual_data["Name"].tolist()
 selected_players = st.multiselect("Select 3 Players for the Line", players)
